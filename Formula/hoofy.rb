@@ -11,7 +11,7 @@ class Hoofy < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/HendryAvila/Hoofy/releases/download/v0.12.0/hoofy_0.12.0_darwin_amd64.tar.gz"
-      sha256 "18232934a263395e007ab029da4fea2c9ec9cfd4e4fb83044180800e06e09ba3"
+      sha256 "5fa81b877619ac5113ea47c2205f8ef3ed2c9f4eff5f0129f3fa571a2ca5616c"
 
       define_method(:install) do
         bin.install "hoofy"
@@ -19,7 +19,7 @@ class Hoofy < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/HendryAvila/Hoofy/releases/download/v0.12.0/hoofy_0.12.0_darwin_arm64.tar.gz"
-      sha256 "70f6ab99fa26e00d6d6e152b457153f88a8bb4546adf284677a8b15b1d9accf4"
+      sha256 "679eb6e0616732dfab87b19f1d7d1bbd966e3e5fcf372148d506641596f529bf"
 
       define_method(:install) do
         bin.install "hoofy"
@@ -30,14 +30,14 @@ class Hoofy < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/HendryAvila/Hoofy/releases/download/v0.12.0/hoofy_0.12.0_linux_amd64.tar.gz"
-      sha256 "28d26af498f5bd64fa6a5ade82d2b5aaf6cd8d9f38f2cafd8d66e1cfd9c0f9dc"
+      sha256 "36f5e28d26a1db175e12e92fe180dbcf5b35c1471d9449dfa5f95d2528a9027c"
       define_method(:install) do
         bin.install "hoofy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/HendryAvila/Hoofy/releases/download/v0.12.0/hoofy_0.12.0_linux_arm64.tar.gz"
-      sha256 "ff7500747cca9faaa63bb393ea619a94673738940aafe6dd4adf71b1a5172fe2"
+      sha256 "886046f474c20c64b920e112c7119470d413f2a5801671394457c91e835f85e7"
       define_method(:install) do
         bin.install "hoofy"
       end
