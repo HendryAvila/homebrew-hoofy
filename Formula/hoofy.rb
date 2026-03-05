@@ -5,21 +5,21 @@
 class Hoofy < Formula
   desc "Spec-Driven Development MCP Server — persistent memory, adaptive changes, clarity gate"
   homepage "https://github.com/HendryAvila/Hoofy"
-  version "0.13.0"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/HendryAvila/Hoofy/releases/download/v0.13.0/hoofy_0.13.0_darwin_amd64.tar.gz"
-      sha256 "d49fd9f24d4a5346e17f6081514ab1f1428fff46738594c1d9aa0da561a20db7"
+      url "https://github.com/HendryAvila/Hoofy/releases/download/v1.0.0/hoofy_1.0.0_darwin_amd64.tar.gz"
+      sha256 "d5ad31d45c622f739036f3ebe865956a46dbf45cc64990ddf764afff37acfae4"
 
       define_method(:install) do
         bin.install "hoofy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/HendryAvila/Hoofy/releases/download/v0.13.0/hoofy_0.13.0_darwin_arm64.tar.gz"
-      sha256 "352b9f23b37d9c104916d7009de573e473997131aef8d4e09d1c39e6037c1c15"
+      url "https://github.com/HendryAvila/Hoofy/releases/download/v1.0.0/hoofy_1.0.0_darwin_arm64.tar.gz"
+      sha256 "9471d7e62e5ecc0fab45c27a10388857cc5189e514a2b8816f7e2c5653b4d739"
 
       define_method(:install) do
         bin.install "hoofy"
@@ -29,15 +29,15 @@ class Hoofy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HendryAvila/Hoofy/releases/download/v0.13.0/hoofy_0.13.0_linux_amd64.tar.gz"
-      sha256 "54e9bb73ede720febc5172a5bbc2a835f499abcbe6741c6818d5869d86af12e7"
+      url "https://github.com/HendryAvila/Hoofy/releases/download/v1.0.0/hoofy_1.0.0_linux_amd64.tar.gz"
+      sha256 "3b0bd233bcb263451549814e98f8df183f48329e0788370cb8e367caefbfa08a"
       define_method(:install) do
         bin.install "hoofy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HendryAvila/Hoofy/releases/download/v0.13.0/hoofy_0.13.0_linux_arm64.tar.gz"
-      sha256 "3079860ff252e0eed62d1857a8d75231610ea8737e3f8697fdf5f2b32d321146"
+      url "https://github.com/HendryAvila/Hoofy/releases/download/v1.0.0/hoofy_1.0.0_linux_arm64.tar.gz"
+      sha256 "8a06b90edb54bf6cbf5a673bc6243650ad6fde896f594354ece681cddc86faa3"
       define_method(:install) do
         bin.install "hoofy"
       end
